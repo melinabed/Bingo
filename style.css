@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  font-size: 40px;
+  padding: 10px;
+
+  background-color: black;
+  color: white;
+
+  margin-bottom: 150px;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 80px;
+  padding: 10px;
+  font-family: Arial;
+  margin-left: 80px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(5, 100px);
+}
+
+.box > div {
+  border: 1px solid black;
+}
