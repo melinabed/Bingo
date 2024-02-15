@@ -10,7 +10,7 @@ body {
   background-color: black;
   color: white;
 
-  margin-bottom: 150px;
+  margin-bottom: 75px;
   font-family: Arial;
 }
 
@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .card-title {
@@ -79,4 +80,37 @@ body {
 #o-marker:hover {
   background-color: blue;
   transition: 1s;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  font-size: 24px;
+  padding: 5px 15px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+#start-button:hover {
+  box-shadow:
+    rgba(6, 218, 31, 0.25) 0px 54px 55px,
+    rgba(6, 218, 31, 0.25) 0px -12px 30px,
+    rgba(6, 218, 31, 0.25) 0px 4px 6px,
+    rgba(6, 218, 31, 0.25) 0px 12px 13px,
+    rgba(6, 218, 31, 0.25) 0px -3px 5px;
+}
+
+#reset-button:hover {
+  box-shadow:
+    rgba(218, 20, 6, 0.25) 0px 54px 55px,
+    rgba(218, 20, 6, 0.25) 0px -12px 30px,
+    rgba(218, 20, 6, 0.25) 0px 4px 6px,
+    rgba(218, 20, 6, 0.25) 0px 12px 13px,
+    rgba(218, 20, 6, 0.25) 0px -3px 5px;
 }
