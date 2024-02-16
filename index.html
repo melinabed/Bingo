@@ -5,93 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bingo</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="heading">
-      <div>BINGO</div>
-    </div>
-    <div class="container">
-      <div class="card-title">BINGO</div>
-      <div class="box">
-        <div id="box1">
-          <div id="b-marker"></div>
-        </div>
-        <div id="box2">
-          <div id="i-marker"></div>
-        </div>
-        <div id="box3">
-          <div id="n-marker"></div>
-        </div>
-        <div id="box4">
-          <div id="g-marker"></div>
-        </div>
-        <div id="box5">
-          <div id="o-marker"></div>
-        </div>
-        <div id="box6">
-          <div id="b-marker"></div>
-        </div>
-        <div id="box7">
-          <div id="i-marker"></div>
-        </div>
-        <div id="box8">
-          <div id="n-marker"></div>
-        </div>
-        <div id="box9">
-          <div id="g-marker"></div>
-        </div>
-        <div id="box10">
-          <div id="o-marker"></div>
-        </div>
-        <div id="box11">
-          <div id="b-marker"></div>
-        </div>
-        <div id="box12">
-          <div id="i-marker"></div>
-        </div>
-        <div id="box13">
-          <div id="n-marker">Free Space</div>
-        </div>
-        <div id="box14">
-          <div id="g-marker"></div>
-        </div>
-        <div id="box15">
-          <div id="o-marker"></div>
-        </div>
-        <div id="box16">
-          <div id="b-marker"></div>
-        </div>
-        <div id="box17">
-          <div id="i-marker"></div>
-        </div>
-        <div id="box18">
-          <div id="n-marker"></div>
-        </div>
-        <div id="box19">
-          <div id="g-marker"></div>
-        </div>
-        <div id="box20">
-          <div id="o-marker"></div>
-        </div>
-        <div id="box21">
-          <div id="b-marker"></div>
-        </div>
-        <div id="box22">
-          <div id="i-marker"></div>
-        </div>
-        <div id="box23">
-          <div id="n-marker"></div>
-        </div>
-        <div id="box24">
-          <div id="g-marker"></div>
-        </div>
-        <div id="box25">
-          <div id="o-marker"></div>
+    <div class="content">
+      <div class="image">
+        <img src="menu (1).svg" alt="Menu" />
+      </div>
+
+      <div class="heading">
+        <div id="title">BINGO</div>
+      </div>
+      <div class="sidebar">
+        <div class="marker-change">
+          Change Marker
+          <div class="colors">
+            <div id="red">Red</div>
+            <div id="blue">Blue</div>
+            <div id="green">Green</div>
+          </div>
         </div>
       </div>
-      <div class="buttons">
-        <button id="start-button">Start</button>
-        <button id="reset-button">Reset</button>
+      <div class="main">
+        <div class="container">
+          <div class="card-title">BINGO</div>
+          <div class="box">
+            <div id="box1">
+              <div id="b-marker"></div>
+            </div>
+            <div id="box2">
+              <div id="i-marker"></div>
+            </div>
+            <div id="box3">
+              <div id="n-marker"></div>
+            </div>
+            <div id="box4">
+              <div id="g-marker"></div>
+            </div>
+            <div id="box5">
+              <div id="o-marker"></div>
+            </div>
+            <div id="box6">
+              <div id="b-marker"></div>
+            </div>
+            <div id="box7">
+              <div id="i-marker"></div>
+            </div>
+            <div id="box8">
+              <div id="n-marker"></div>
+            </div>
+            <div id="box9">
+              <div id="g-marker"></div>
+            </div>
+            <div id="box10">
+              <div id="o-marker"></div>
+            </div>
+            <div id="box11">
+              <div id="b-marker"></div>
+            </div>
+            <div id="box12">
+              <div id="i-marker"></div>
+            </div>
+            <div id="box13">
+              <div id="free-space">Free Space</div>
+            </div>
+            <div id="box14">
+              <div id="g-marker"></div>
+            </div>
+            <div id="box15">
+              <div id="o-marker"></div>
+            </div>
+            <div id="box16">
+              <div id="b-marker"></div>
+            </div>
+            <div id="box17">
+              <div id="i-marker"></div>
+            </div>
+            <div id="box18">
+              <div id="n-marker"></div>
+            </div>
+            <div id="box19">
+              <div id="g-marker"></div>
+            </div>
+            <div id="box20">
+              <div id="o-marker"></div>
+            </div>
+            <div id="box21">
+              <div id="b-marker"></div>
+            </div>
+            <div id="box22">
+              <div id="i-marker"></div>
+            </div>
+            <div id="box23">
+              <div id="n-marker"></div>
+            </div>
+            <div id="box24">
+              <div id="g-marker"></div>
+            </div>
+            <div id="box25">
+              <div id="o-marker"></div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button id="start-button">Start</button>
+            <button id="reset-button">Reset</button>
+          </div>
+        </div>
+        <div class="call-card">
+          Current Call
+          <div class="call-ball">
+            <div id="number-call">B6</div>
+          </div>
+          <button id="next-call">Next Call</button>
+        </div>
       </div>
     </div>
 
