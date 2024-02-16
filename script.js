@@ -1,3 +1,15 @@
+const sidebar = document.querySelector(".sidebar");
+sidebar.style.display = "none";
+
+const menu = document.querySelector("#menu");
+menu.addEventListener("click", () => {
+  if (sidebar.style.display === "none") {
+    sidebar.style.display = "block";
+  } else {
+    sidebar.style.display = "none";
+  }
+});
+
 const numbers = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
   23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
@@ -65,4 +77,19 @@ function placeNumber() {
   for (let i = 0; i < oMarkers.length; i++) {
     oMarkers[i].innerHTML = Math.floor(Math.random() * oNumbers.length + 61);
   }
+
+  callNumber.innerHTML = getCall();
 }
+
+function changeColor() {
+  const marker = document.querySelectorAll("#box");
+
+  for (let i = 0; i < marker.length; i++) {
+    marker[i].addEventListener("click", () => {
+      marker[i].style.backgroundColor = "white";
+      marker[i].style.color = "black";
+    });
+  }
+}
+
+changeColor();
